@@ -1,13 +1,23 @@
+//var accountRouter = require("./routes/auth");
+
 const path = require('path');
 const http = require('http');
 const socketio = require('socket.io');
 const express = require('express');
+const mysql = require('mysql');
 const formatMessage = require('./utils/messages.js');
 const {userJoin, getCurrentUser, userLeave, getRoomUsers} = require('./utils/users.js');
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 const mongo = require('mongodb');
+const conn = mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'',
+    insecureAuth:true
+})
 
 
 
@@ -15,7 +25,7 @@ const MongoClient = mongo.MongoClient;
 const url = 'mongodb://localhost:27017/';
 
 
-
+//app.use("/account", accountRouter);
 app.use(express.static(path.join(__dirname, 'public')));
 
 const botName = 'LetsChat Bot';

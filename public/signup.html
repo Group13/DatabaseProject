@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=2.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Lets Chat</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fa fa-coffee"></i> LetsChat</h1>
+			</header>
+			<main class="join-main">
+				<form action="/account/getin" method="post" enctype="multipart/form-data">
+					<div class="form-control">
+						<label for="username">Full Name</label>
+						<input type="text" placeholder="first_name" class="form-control" style="width: 48%;float: left;" name="fn" required="">
+                        <input type="text" placeholder="last_name" class="form-control" style="width: 48%;float: right;" name="ln" required="">
+        
+					</div>
+					<div class="form-control">
+						<label for="pass">Username</label>
+						<input type="text" placeholder="your_nick_name" class="form-control" name="username" required="">
+                    </div>
+                    <div class="form-control">
+						<label for="pass">Password</label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="the_secret"
+							required
+						/>
+                    </div>
+                    <div class="form-control">
+                        <label class="text-muted">Date of birth</label>
+                        <select class="form-control" name="day" style="float: left;width: 33%;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                           <option>31</option>
+                         </select>
+                        <select class="form-control" name="month" style="float: left;width: 33%;">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>Aug</option>
+                            <option>Sept</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+                        </select>
+                        <select class="form-control" name="year" style="float: left;width: 33%;">
+                            <option>1960</option>
+                            <option>1961</option>
+                            <option>1962</option>
+                            <option>1963</option>
+                            <option>1964</option>
+                            <option>1965</option>
+                            <option>1966</option>
+                            <option>1967</option>
+                            <option>1968</option>
+                            <option>1969</option>
+                            <option>1970</option>
+                            <option>1971</option>
+                            <option>1972</option>
+                            <option>1973</option>
+                            <option>1974</option>
+                            <option>1975</option>
+                            <option>1976</option>
+                            <option>1977</option>
+                            <option>1978</option>
+                            <option>1979</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                            <option>1989</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                        </select>
+                    </div>
+					<button type="submit" class="btn">Get Started</button>
+                </form>
+                <p class="text-muted">Already a part of it? <a href="index.html">login now!</a></p>
+			</main>
+		</div>
+	</body>
+</html>
