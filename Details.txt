@@ -1,0 +1,1 @@
+Short Descripion : used 2 types of database for handling purpose of storing sturctured and unstructure data
